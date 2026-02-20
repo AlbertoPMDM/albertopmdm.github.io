@@ -1,3 +1,5 @@
+$button-size: 24px;
+
 * {
   font-family: monospace !important;
 }
@@ -7,14 +9,18 @@
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+  width: $button-size;
+  height: $button-size;
 }
 
 .menu {
-  padding: 1rem;
+  flex-basis: 10%;
+  flex-shrink: 0;
 }
 
+.container {
+  gap: 1rem;
+}
 .container.v {
   display: flex;
   flex-direction: column;
@@ -26,8 +32,11 @@
 }
 
 .sidebar {
-  flex-basis: 20%;
-  flex-shrink: 0;
+  
+}
+
+.sidebar a {
+  font-size: 2rem;
 }
 
 .sidebar.closed {
@@ -37,12 +46,10 @@
 
 @media (max-width: 768px) {
   .sidebar {
-    position: fixed;
-    left: -250px;
+    flex-basis: 100%;
   }
 }
 
 .content {
   flex: 1; /* takes up remaining space */
-  padding: 1rem;
 }
