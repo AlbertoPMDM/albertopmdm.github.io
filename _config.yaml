@@ -1,5 +1,6 @@
 # _config.yml
 
+baseurl: "https://albertopmdm.github.io"
 title: "Jekyll Actions Demo"
 
 collections:
