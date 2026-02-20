@@ -1,3 +1,30 @@
 .current {
   color: green;
 }
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  flex-basis: 20%;
+  flex-shrink: 0;
+  background-color: aquamarine;
+}
+
+.sidebar.open {
+    left: 0;
+    background-color: blue;
+  }
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: -250px;
+  }
+}
+
+.content {
+  flex: 1; /* takes up remaining space */
+  background-color: red;
+}
