@@ -3,23 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <script src="/assets/js/main.js"></script>
-    <script>
-      MathJax = {
-        tex: {
-          inlineMath: {'[+]': [['$', '$']]}
-        }
-      };
-      </script>
-      <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+
+    {% include imports.html %}
+
   </head>
   <body>
-    <div class="container">
+    <div class="container h">
       {% include navigation.html %}
-      <div class="content">
+      <main class="content">
         {{ content }}
-      </div>
+      </main>
     </div>
   </body>
 </html>

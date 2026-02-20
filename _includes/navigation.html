@@ -1,11 +1,21 @@
-<div id="sidebar", class="sidebar">
-  <nav>
-    <ul>
-      {% for item in site.data.navigation %}
-      <li><a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
+<div class="menu container h">
 
-<button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="container v">
+
+    <button onclick="toggleSidebar()">
+      <img src="{{ 'assets/icons/menu.svg' | relative_url }}" class="icon">  
+    </button>
+
+  </div>
+
+  <div id="sidebar", class="sidebar">
+    <nav>
+      <ul>
+        {% for item in site.data.navigation %}
+        <li><a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+
+</div>
