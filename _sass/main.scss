@@ -30,12 +30,13 @@ details[open] > summary > .chevron {
 
 .tree li {
   display: block;
-
+  list-style: none;
   padding-bottom: 0.2rem;
   padding-top: 0.2rem;
 }
 
 .tree ul {
+  list-style: none;
   padding-left: var(--spacing);
 }
 
