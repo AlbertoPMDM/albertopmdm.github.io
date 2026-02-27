@@ -7,15 +7,44 @@
     </button>
 
     <button onclick="toggleSidebar()">
-      <img src="{{ 'assets/icons/menu.svg' | relative_url }}" class="icon">  
+      <img src="{{ 'assets/icons/github.svg' | relative_url }}" class="icon">  
+    </button>
+
+    <button onclick="toggleSidebar()">
+      <img src="{{ 'assets/icons/linkedin.svg' | relative_url }}" class="icon">  
     </button>
 
   </div>
 
   <nav id="sidebar", class="sidebar">
-        {% for item in site.data.navigation %}
-        <a href="{{ item.link }}"{% if page.url == item.link %}{% endif %}>{{ item.name }}</a>
-        {% endfor %}
+    <ul class="tree">
+
+      <!-- Homepage -->
+      <li>
+        <a href="/">
+          <div>
+            <img src="{{ 'assets/icons/house.svg' | relative_url }}" class="small-icon"> 
+            Home
+          </div>
+        </a>
+      </li>
+
+      <!-- About page-->
+      <li>
+        <a href="/about.html">
+          <div>
+            <img src="{{ 'assets/icons/info.svg' | relative_url }}" class="small-icon">
+            About
+          </div>
+        </a>
+      </li>
+
+      <!-- Notes -->
+      {% include tree-section.html collection=site.notes title="Notes" %}
+
+      <!-- Projects -->
+      {% include tree-section.html collection=site.projects title="Projects" %}
+    </ul>
   </nav>
 
 </div>

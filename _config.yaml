@@ -4,7 +4,9 @@ baseurl: "https://albertopmdm.github.io"
 title: "Jekyll Actions Demo"
 
 collections:
-  authors:
+  notes:
+    output: true
+  projects:
     output: true
 
 defaults:
