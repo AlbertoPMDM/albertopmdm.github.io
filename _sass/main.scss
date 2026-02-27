@@ -19,6 +19,11 @@ html {
   flex-direction: column;
 }
 
+.tree a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .chevron {
   width: var(--size);
   height: var(--size);
