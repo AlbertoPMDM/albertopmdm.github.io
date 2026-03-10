@@ -8,7 +8,7 @@
             {{include.title}}
         </summary>
 
-        {% assign by_topic = include.collection | group_by:"topic" %}
+        {% assign by_topic = include.collection | group_by:"topic"%}
 
         <ul>
             {% for topic in by_topic%}
@@ -16,9 +16,9 @@
                 {% if topic.name == "" %}
 
                     {% for note in topic.items %}
-                        <li class="file">    
+                        <li>    
                             <a href="{{note.url}}">
-                                <div>
+                                <div class="file lone">
                                     <img src="{{ 'assets/icons/book-open.svg' | relative_url }}" class="small-icon"> 
                                     {{ note.title }}
                                 </div>
@@ -29,7 +29,7 @@
                 {% else %}
 
                     <li>
-                        <details open>
+                        <details>
 
                             <summary>
                                 <img src="{{ 'assets/icons/chevron-right.svg' | relative_url }}" class="chevron">
@@ -39,9 +39,9 @@
 
                             <ul>
                                 {% for note in topic.items %}
-                                    <li class="file">
+                                    <li>
                                         <a href="{{note.url}}">
-                                            <div>
+                                            <div class="file">
                                                 <img src="{{ 'assets/icons/book-open.svg' | relative_url }}" class="small-icon">
                                                 {{ note.title }}
                                             </div>

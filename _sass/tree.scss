@@ -1,0 +1,82 @@
+@use "base" as *;
+
+/* tree view */
+.tree {
+  --spacing: 0.5rem;
+  --size: 1rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tree a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.chevron {
+  width: var(--size);
+  height: var(--size);
+}
+
+details[open] > summary > .chevron {
+  transform: rotate(90deg);
+}
+
+.tree li {
+  display: block;
+  list-style: none;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+}
+
+.tree ul {
+  list-style: none;
+  padding-left: var(--spacing);
+}
+
+.tree ul li {
+  border-left: 2px solid $fg;
+}
+
+.tree summary {
+  list-style: none;
+}
+
+.file.lone{
+  padding-left: 1.5rem;
+}
+
+.file{
+  padding-left: 1rem;
+}
+
+.tree li:has(> a):hover,
+.tree summary:hover,
+.file:hover {
+  background: $fg-accent;
+  border-radius: $radius;
+}
+
+
+
+/* Legacy */
+
+.tree summary {
+  display: block;
+  cursor: pointer;
+}
+
+.tree summary::marker,
+.tree summary::-webkit-details-marker {
+  display: none;
+}
+
+.tree summary:focus {
+  outline: none;
+}
+
+.tree summary:focus-visible {
+  outline: 1px dotted #000;
+}

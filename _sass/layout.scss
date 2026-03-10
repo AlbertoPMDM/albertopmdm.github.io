@@ -1,0 +1,58 @@
+@use "base" as *;
+
+.h-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-button {
+    border-radius: 0px;
+    border-color: transparent;
+}
+
+.menu-button:hover{
+    background-color: $fg-accent;
+}
+
+.menu-button.open{
+    background-color: $fg-accent;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-right: 2px solid $fg;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  background-color: $bg-accent;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  height: 100vh;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-right: 2px solid $fg;
+  
+}
+
+.sidebar.closed {
+  width: 0;
+  padding-right: 0rem;
+  padding-left: 0rem;
+  visibility: hidden;
+}
+
+.content {
+  flex: 1;
+  height: 100vh;
+  padding-left: 0.5rem;
+  background-color: $bg;
+}

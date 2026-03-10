@@ -1,0 +1,30 @@
+$button-size: 1.5rem;
+
+$radius: 6px;
+
+$bg: ivory;
+$bg-accent: rgb(236, 236, 236);
+$fg: gray;
+$fg-accent: darkgray;
+$fg-accent2: dimgray;
+$acc-red: red;
+$acc-orange: orange;
+$acc-yellow: yellow;
+$acc-green: green;
+$acc-blue: blue;
+$acc-purple: purple;
+
+
+
+* {
+  font-family: monospace;
+}
+
+html {
+  font-size: 24px;
+}
+
+body {
+    background-color: $bg-accent;
+    margin: 0px;
+}

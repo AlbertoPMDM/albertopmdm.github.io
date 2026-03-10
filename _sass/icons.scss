@@ -1,0 +1,15 @@
+@use "base" as *;
+
+/* Icons */
+
+
+.icon {
+  width: $button-size;
+  height: $button-size;
+}
+
+.small-icon {
+  height: var(--size);
+  width: var(--size);
+  vertical-align: middle;
+}
