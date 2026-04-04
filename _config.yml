@@ -9,50 +9,38 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://zones.arilyn.cc
-timezone:
+timezone: America/Monterrey
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Alberto Méndez-Dettmer # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: B.Sc. in Physics # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://albertopmdm.github.io"
 
 github:
-  username: github_username # change to your GitHub username
-
-twitter:
-  username: twitter_username # change to your Twitter username
+  username: AlbertoPMDM # change to your GitHub username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
-  fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
+  name: Alberto Méndez-Dettmer
+  email: alberto@mendezdettmer.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://github.com/AlbertoPMDM # change to your GitHub homepage
+    - https://www.linkedin.com/in/albertopmdm
 
 # Site Verification Settings
 webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+  google: QUVBYoCiDalAi1R_TFSNKP8cZZCk4sFtsjR0OGEF9NI # fill in your Google verification code
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -60,23 +48,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
-  goatcounter:
-    id: # fill in your GoatCounter ID
-  umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
-  matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
-  cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
-  fathom:
-    id: # fill in your Fathom Site ID
-
-# Page views settings
-pageviews:
-  provider: # now only supports 'goatcounter'
+    id: G-0HF8SXHZRN
 
 # Prefer color scheme setting.
 #
@@ -110,33 +82,13 @@ toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
-  disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
-  utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+  provider: giscus # [disqus | utterances | giscus]
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
-
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
-assets:
-  self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
-    env: # [development | production]
+    repo: albertopmdm/albertopmdm.github.io # <gh-username>/<repo>
+    repo_id: R_kgDOR5Z-Pw
+    category: General
+    category_id: DIC_kwDOR5Z-P84C6BFG
 
 pwa:
   enabled: true # The option for PWA feature (installable)
