@@ -1,0 +1,279 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+#avatar {
+  display: none !important;
+}
+
+.site-title {
+    margin-top: 8px !important;
+}
+
+h1, h2, h3, h4, h5, h6, .site-title,
+figcaption, .post-meta, time,
+#breadcrumb, em {
+    font-family: monospace !important;
+}
+
+/* ============================================================
+   GRUVBOX FULL UI THEME FOR CHIRPY
+   Covers: data-mode attribute (Chirpy toggle)
+         + prefers-color-scheme (Firefox simulator / OS setting)
+   ============================================================ */
+
+$gb-dark-bg0-hard: #1d2021;
+$gb-dark-bg0:      #282828;
+$gb-dark-bg1:      #3c3836;
+$gb-dark-bg2:      #504945;
+$gb-dark-bg3:      #665c54;
+$gb-dark-bg4:      #7c6f64;
+$gb-dark-fg:       #ebdbb2;
+$gb-dark-fg1:      #d5c4a1;
+$gb-dark-fg2:      #bdae93;
+$gb-dark-fg3:      #a89984;
+$gb-dark-red-b:    #fb4934;
+$gb-dark-green-b:  #b8bb26;
+$gb-dark-yellow:   #d79921;
+$gb-dark-yellow-b: #fabd2f;
+$gb-dark-blue-b:   #83a598;
+$gb-dark-aqua-b:   #8ec07c;
+$gb-dark-orange-b: #fe8019;
+
+$gb-light-bg0-hard: #f9f5d7;
+$gb-light-bg0:      #fbf1c7;
+$gb-light-bg1:      #ebdbb2;
+$gb-light-bg2:      #d5c4a1;
+$gb-light-bg3:      #bdae93;
+$gb-light-bg4:      #a89984;
+$gb-light-fg:       #3c3836;
+$gb-light-fg2:      #665c54;
+$gb-light-fg3:      #7c6f64;
+$gb-light-red-b:    #9d0006;
+$gb-light-yellow:   #d79921;
+$gb-light-yellow-b: #b57614;
+$gb-light-blue-b:   #076678;
+$gb-light-green-b:  #79740e;
+$gb-light-orange-b: #af3a03;
+
+@mixin gruvbox-dark {
+  --site-title-color:           #{$gb-dark-fg};
+  --site-subtitle-color:        #{$gb-dark-fg1};
+  --body-bg:                    #{$gb-dark-bg0-hard};
+  --main-bg:                    #{$gb-dark-bg0};
+  --main-border-color:          #{$gb-dark-bg1};
+  --mask-bg:                    #{$gb-dark-bg2};
+  --text-color:                 #{$gb-dark-fg};
+  --text-muted-color:           #{$gb-dark-fg3};
+  --text-muted-highlight-color: #{$gb-dark-fg2};
+  --heading-color:              #{$gb-dark-fg};
+  --label-color:                #{$gb-dark-fg2};
+  --link-color:                 #{$gb-dark-blue-b};
+  --link-underline-color:       #{$gb-dark-bg3};
+  --blockquote-border-color:    #{$gb-dark-yellow};
+  --blockquote-text-color:      #{$gb-dark-fg3};
+  --button-bg:                  #{$gb-dark-bg1};
+  --btn-border-color:           #{$gb-dark-bg2};
+  --btn-backtotop-color:        #{$gb-dark-fg3};
+  --btn-backtotop-border-color: #{$gb-dark-bg2};
+  --btn-box-shadow:             #{$gb-dark-bg0-hard};
+  --sidebar-bg:                 #{$gb-dark-bg0-hard};
+  --sidebar-muted-color:        #{$gb-dark-fg3};
+  --sidebar-active-color:       #{$gb-dark-yellow-b};
+  --sidebar-hover-bg:           #{$gb-dark-bg1};
+  --sidebar-btn-bg:             #{$gb-dark-bg1};
+  --nav-cursor-color:           #{$gb-dark-yellow-b};
+  --sidebar-border-color:       #{$gb-dark-bg1};
+  --topbar-bg:                  #{$gb-dark-bg0};
+  --topbar-text-color:          #{$gb-dark-fg3};
+  --search-wrapper-border-color:#{$gb-dark-bg2};
+  --search-tag-bg:              #{$gb-dark-bg1};
+  --search-icon-color:          #{$gb-dark-fg3};
+  --tag-bg:                     #{$gb-dark-bg1};
+  --tag-hover:                  #{$gb-dark-bg2};
+  --tag-border-color:           #{$gb-dark-bg2};
+  --categories-border:          #{$gb-dark-bg2};
+  --card-bg:                    #{$gb-dark-bg0-hard};
+  --card-border-color:          #{$gb-dark-bg1};
+  --card-box-shadow:            #{gb-dark-bg0-hard};
+  --card-hovor-bg:              #{$gb-dark-bg1};
+  --tb-odd-bg:                  #{$gb-dark-bg1};
+  --tb-even-bg:                 #{$gb-dark-bg0};
+  --tb-border-color:            #{$gb-dark-bg2};
+  --table-border-color:         #{$gb-dark-bg2};
+  --code-bg:                    #{$gb-dark-bg0-hard};
+  --code-color:                 #{$gb-dark-green-b};
+  --code-header-bg:             #{$gb-dark-bg2};
+  --code-header-muted-color:    #{$gb-dark-fg3};
+  --code-header-icon-color:     #{$gb-dark-fg3};
+  --clipboard-checked-color:    #{$gb-dark-green-b};
+  --highlight-bg-color:         #{$gb-dark-bg1};
+  --footnote-target-bg:         #{$gb-dark-bg1};
+  --checkbox-color:             #{$gb-dark-bg3};
+  --checkbox-checked-color:     #{$gb-dark-yellow-b};
+  --img-bg:                     #{$gb-dark-bg1};
+  --shimmer-bg:                 linear-gradient(90deg, rgba(40,40,40,0) 0%, rgba(60,56,54,0.8) 50%, rgba(40,40,40,0) 100%);
+  --prompt-tip-bg:              rgba(152,151,26,0.40);
+  --prompt-tip-icon-color:      #{$gb-dark-green-b};
+  --prompt-info-bg:             rgba(69,133,136,0.40);
+  --prompt-info-icon-color:     #{$gb-dark-blue-b};
+  --prompt-warning-bg:          rgba(215,153,33,0.40);
+  --prompt-warning-icon-color:  #{$gb-dark-yellow-b};
+  --prompt-danger-bg:           rgba(204,36,29,0.40);
+  --prompt-danger-icon-color:   #{$gb-dark-red-b};
+  --toc-highlight:              #{$gb-dark-yellow-b};
+  --h2-color:                   #{$gb-dark-blue-b};
+  --h3-color:                   #{$gb-dark-yellow-b};
+  --h4-color:                   #{$gb-dark-red-b};
+  --h5-color:                   #{$gb-dark-green-b};
+  --sidebar-btn-color:          #{$gb-dark-fg3};
+  --category-header:            #{$gb-dark-bg1};
+  --category-border:            #{$gb-dark-bg0-hard};
+  --category-content:           #{$gb-dark-bg0-hard};
+}
+
+@mixin gruvbox-light {
+  --site-title-color:           #{$gb-light-fg};
+  --site-subtitle-color:        #{$gb-light-fg2};
+  --body-bg:                    #{$gb-light-bg0-hard};
+  --main-bg:                    #{$gb-light-bg0};
+  --main-border-color:          #{$gb-light-bg1};
+  --mask-bg:                    #{$gb-light-bg2};
+  --text-color:                 #{$gb-light-fg};
+  --text-muted-color:           #{$gb-light-fg3};
+  --text-muted-highlight-color: #{$gb-light-fg2};
+  --heading-color:              #{$gb-light-fg};
+  --label-color:                #{$gb-light-fg2};
+  --link-color:                 #{$gb-light-blue-b};
+  --link-underline-color:       #{$gb-light-bg3};
+  --blockquote-border-color:    #{$gb-light-yellow};
+  --blockquote-text-color:      #{$gb-light-fg3};
+  --button-bg:                  #{$gb-light-bg1};
+  --btn-border-color:           #{$gb-light-bg2};
+  --btn-backtotop-color:        #{$gb-light-fg3};
+  --btn-backtotop-border-color: #{$gb-light-bg2};
+  --btn-box-shadow:             #{$gb-light-bg2};
+  --sidebar-bg:                 #{$gb-light-bg1};
+  --sidebar-muted-color:        #{$gb-light-fg3};
+  --sidebar-active-color:       #{$gb-light-yellow-b};
+  --sidebar-hover-bg:           #{$gb-light-bg2};
+  --sidebar-btn-bg:             #{$gb-light-bg0};
+  --nav-cursor-color:           #{$gb-light-yellow-b};
+  --sidebar-border-color:       #{$gb-light-bg2};
+  --topbar-bg:                  #{$gb-light-bg0};
+  --topbar-text-color:          #{$gb-light-fg3};
+  --search-wrapper-border-color:#{$gb-light-bg2};
+  --search-tag-bg:              #{$gb-light-bg1};
+  --search-icon-color:          #{$gb-light-fg3};
+  --tag-bg:                     #{$gb-light-bg1};
+  --tag-hover:                  #{$gb-light-bg2};
+  --tag-border-color:           #{$gb-light-bg2};
+  --categories-border:          #{$gb-light-bg2};
+  --card-bg:                    #{$gb-light-bg1};
+  --card-border-color:          #{$gb-light-bg1};
+  --card-box-shadow:            #{gb-light-bg0-hard};
+  --card-hovor-bg:              #{$gb-light-bg1};
+  --tb-odd-bg:                  #{$gb-light-bg1};
+  --tb-even-bg:                 #{$gb-light-bg0};
+  --tb-border-color:            #{$gb-light-bg2};
+  --table-border-color:         #{$gb-light-bg2};
+  --code-bg:                    #{$gb-light-bg0-hard};
+  --code-color:                 #{$gb-light-green-b};
+  --code-header-bg:             #{$gb-light-bg2};
+  --code-header-muted-color:    #{$gb-light-fg3};
+  --code-header-icon-color:     #{$gb-light-fg3};
+  --clipboard-checked-color:    #{$gb-light-green-b};
+  --highlight-bg-color:         #{$gb-light-bg1};
+  --footnote-target-bg:         #{$gb-light-bg1};
+  --checkbox-color:             #{$gb-light-bg3};
+  --checkbox-checked-color:     #{$gb-light-yellow-b};
+  --img-bg:                     #{$gb-light-bg1};
+  --shimmer-bg:                 linear-gradient(90deg, rgba(251,241,199,0) 0%, rgba(213,196,161,0.8) 50%, rgba(251,241,199,0) 100%);
+  --prompt-tip-bg:              rgba(152,151,26,0.40);
+  --prompt-tip-icon-color:      #{$gb-light-green-b};
+  --prompt-info-bg:             rgba(69,133,136,0.40);
+  --prompt-info-icon-color:     #{$gb-light-blue-b};
+  --prompt-warning-bg:          rgba(215,153,33,0.40);
+  --prompt-warning-icon-color:  #{$gb-light-yellow-b};
+  --prompt-danger-bg:           rgba(204,36,29,0.40);
+  --prompt-danger-icon-color:   #{$gb-light-red-b};
+  --toc-highlight:              #{$gb-light-yellow-b};
+  --h2-color:                   #{$gb-light-blue-b};
+  --h3-color:                   #{$gb-light-yellow-b};
+  --h4-color:                   #{$gb-light-red-b};
+  --h5-color:                   #{$gb-light-green-b};
+  --sidebar-btn-color:          #{$gb-light-fg3};
+  --category-header:            #{$gb-light-bg1};
+  --category-border:            #{$gb-light-bg0};
+  --category-content:           #{$gb-light-bg0};
+}
+
+/* --- Apply via Chirpy's data-mode attribute --- */
+html[data-mode='dark']  { @include gruvbox-dark; }
+html[data-mode='light'] { @include gruvbox-light; }
+
+/* --- Apply via prefers-color-scheme (Firefox simulator, OS setting) --- */
+/* when no data-mode is set, fall back to OS preference */
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) { @include gruvbox-dark; }
+}
+@media (prefers-color-scheme: light) {
+  html:not([data-mode]) { @include gruvbox-light; }
+}
+
+html[data-mode='dark'] #archives li:nth-child(2n+1),
+html:not([data-mode]) #archives li:nth-child(2n+1) {
+  background-image: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) #archives li:nth-child(2n+1) {
+    background-image: none !important;
+  }
+}
+
+html[data-mode='light'] #archives li:nth-child(2n+1),
+html:not([data-mode]) #archives li:nth-child(2n+1) {
+  background-image: none !important;
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-mode]) #archives li:nth-child(2n+1) {
+    background-image: none !important;
+  }
+}
+.categories .card-header {
+  background-color: var(--category-header) !important;
+  border: 0.5px solid var(--category-border) !important;
+}
+
+.categories .list-group-item {
+  background-color: var(--category-content) !important;
+}
+.highlight, .w {
+  background-color: var(--code-bg) !important;
+}
+
+h2 {
+  color: var(--h2-color);
+}
+
+h3 {
+  color: var(--h3-color);
+}
+
+h4:not(.card-body *) {
+  color: var(--h4-color);
+}
+
+h5 {
+  color: var(--h5-color);
+}
