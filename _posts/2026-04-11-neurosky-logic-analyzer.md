@@ -1,5 +1,5 @@
 ---
-title: Decoding the comms from a Neurosky Mindflex module
+title: Decoding the communication interface from a Neurosky Mindflex module
 description: Used a logic analyzer and PulseView to reverse engineer the Neurosky ThinkGear UART protocol. Prototyped a packet parser in Python to decode raw EEG band data and validate checksum integrity.
 date: 2026-04-11
 categories:
