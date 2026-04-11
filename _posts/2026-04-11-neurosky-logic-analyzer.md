@@ -34,7 +34,7 @@ The module also outputs two estimators, one called attention, which is a measure
 
 The module consists of a ThinkGear module plugged into an rf board, although I couldn't find any more information on whether this board served another purpose.
 
-After some searching, I came to the conclusion that the device uses the [ThinkGear Communication Protocol]([https://docs.rs/neurosky/latest/neurosky/parser/index.html](https://developer.neurosky.com/docs/doku.php?id=thinkgear_communications_protocol)) (if you can't open the link, try using the wayback machine, hopefully it doesn't get taken down). Although there is an [Arduino library](https://github.com/kitschpatrol/brain) already, I think there is much to gather from inspecting the protocol oneself, and it is a good excuse to get a logic analyzer.
+After some searching, I came to the conclusion that the device uses the [ThinkGear Communication Protocol](https://developer.neurosky.com/docs/doku.php?id=thinkgear_communications_protocol) (if you can't open the link, try using the wayback machine, hopefully it doesn't get taken down). Although there is an [Arduino library](https://github.com/kitschpatrol/brain) already, I think there is much to gather from inspecting the protocol oneself, and it is a good excuse to get a logic analyzer.
 
 > This post focuses only on decoding the UART protocol of a Neurosky ThinkGear module. Due to project constraints, I’ll focus only on the signal acquisition and decoding process.
 {: .prompt-info}
