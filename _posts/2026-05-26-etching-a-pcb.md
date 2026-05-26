@@ -1,7 +1,7 @@
 ---
 title: Etching a PCB
 description: Using transfer paper, and ferric chloride, we test how much resolution we can get in a single-sided homemade PCB.
-date: 2026-04-09
+date: 2026-05-26
 categories: [Blog, Electronics]
 tags:
   - pcb
