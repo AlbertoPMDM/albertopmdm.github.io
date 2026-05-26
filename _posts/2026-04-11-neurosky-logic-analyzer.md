@@ -6,7 +6,7 @@ categories:
   - Blog
   - Electronics
 tags:
-  - UART
+  - uart
   - logic-analyzer
   - protocol-decoding
   - neurosky-thinkgear
