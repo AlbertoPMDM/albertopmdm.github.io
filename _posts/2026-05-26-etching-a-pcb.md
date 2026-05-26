@@ -7,14 +7,13 @@ tags:
   - pcb
   - fabrication
   - kicad
-  - electronics
   - smd
   - ferric-chloride
   - etching
 math: true
 mermaid: false
-image:
- path: assets/images/etching-a-pcb/closeup.jpeg
+#image:
+# path: assets/images/etching-a-pcb/closeup.jpeg
 ---
 
 There are many incentives to going from a protoboard or something like a perfboard to a PCB. Wiring is easier, done in the computer, and we get access to more modern components, most of which are surface-mount (SMD). The easiest way is, of course, to have them made by a Chinese manufacturer, and shipped. But at least in my country, shipping is rather expensive, and recently, it has come to my attention that the necessary components to etch one at home are cheap and accessible.
